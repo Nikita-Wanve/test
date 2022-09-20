@@ -1,15 +1,15 @@
 version: 2.1
 
-orbs:
-  bridgecrew: bridgecrew/bridgecrew@1.0.5
-  
-jobs:
-  build:
-    machine: true
-    steps:
-      - checkout
-    
-      - bridgecrew/scan:
-          api-key-variable: BC_API_KEY
-          directory: .
-workflows: null
+  orbs:
+    bridgecrew: bridgecrew/bridgecrew@x.y.z
+
+  jobs:
+    build:
+      executor: bridgecrew/default
+      steps:
+        - checkout
+        - bridgecrew/scan:
+            directory: '.'
+            soft-fail: true
+            api-key-variable: BC_API_KEY
+            prisma-api-url: PRISMA_API_URL
