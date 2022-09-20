@@ -1,8 +1,8 @@
 version: 2.1
-  orbs:
-    bridgecrew: bridgecrew/bridgecrew@x.y.z
+orbs:
+    bridgecrew: bridgecrew/bridgecrew@1.0.5
 
-  jobs:
+jobs:
     build:
       executor: bridgecrew/default
       steps:
