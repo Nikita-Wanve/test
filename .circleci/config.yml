@@ -1,5 +1,4 @@
 version: 2.1
-
   orbs:
     bridgecrew: bridgecrew/bridgecrew@x.y.z
 
