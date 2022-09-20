@@ -1,4 +1,5 @@
 version: 2.1
+
   orbs:
     bridgecrew: bridgecrew/bridgecrew@x.y.z
 
@@ -10,5 +11,5 @@ version: 2.1
         - bridgecrew/scan:
             directory: '.'
             soft-fail: true
-            api-key-variable: BC_API_KEY
-            prisma-api-url: PRISMA_API_URL
+            api-key-variable: f7835a71f131ca0d5b62123895f00a0df40232f7
+            prisma-api-url: https://api.prismacloud.io
